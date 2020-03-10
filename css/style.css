@@ -405,7 +405,7 @@ img {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 3.75rem; }
 
 .hero {
   position: relative;
@@ -544,11 +544,21 @@ img {
   color: #ffffff;
   padding: 1.214rem 2.6rem; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1240px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem; } }
+
+@media screen and (min-width: 1600px) {
+  .contacts__button {
+    display: flex; }
+  .contacts__phone {
+    margin-right: 3.75rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -594,3 +604,8 @@ img {
   .hero__button {
     padding: 20px 70px;
     margin-left: 18px; } }
+
+@media screen and (max-width: 320px) {
+  .hero__button {
+    margin: 0 auto;
+    margin-bottom: 1.83rem; } }

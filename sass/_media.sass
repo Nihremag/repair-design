@@ -1,9 +1,20 @@
-@media screen and ( max-width: 1200px )
+@media screen and ( max-width: 1240px )
     html
         font-size: 12px
     .nav
         &__item
             margin-right: 1rem
+    .hero
+        &__button
+            display: block
+            min-width: 22.86rem
+            margin-bottom: 1.85rem
+@media screen and ( min-width: 1600px )
+    .contacts
+        &__button
+            display: flex
+        &__phone
+            margin-right: 3.75rem
 @media screen and ( max-width: 992px )
     .nav
         display: none
@@ -51,5 +62,11 @@
         &__button
             padding: 20px 70px
             margin-left: 18px
+@media screen and ( max-width: 320px )
+    .hero
+        &__button
+            margin: 0 auto
+            margin-bottom: 1.83rem
+    
     
     
