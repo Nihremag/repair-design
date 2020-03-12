@@ -23,7 +23,11 @@
             display: none
         &__content
             margin-left: 0
-@media screen and ( max-width: 570px )
+@media screen and ( max-width: 885px )
+    .card
+        &__title
+            font-size: 1rem
+@media screen and ( max-width: 750px )
     .row
         flex-direction: column
         align-items: center
@@ -34,6 +38,13 @@
     .card
         &__text
             margin-left: 0
+        &__title
+            font-size: 1.29rem
+    .design
+        &__section-title
+            color: $light
+        &__color
+        background: linear-gradient(to top, $dark 100%, transparent 0%)
     
 @media screen and ( max-width: 570px )
     .contacts
@@ -57,6 +68,10 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+    .section-subtitle
+        &__text
+            color: $light
+            font-size: 1rem
 @media screen and ( max-height: 520px )
     .hero
         &__scroll-down
