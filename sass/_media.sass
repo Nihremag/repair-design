@@ -1,3 +1,24 @@
+@media screen and ( min-width: 1600px )
+    .contacts
+        &__button
+            display: flex
+        &__phone
+            margin-right: 3.75rem
+    .section-title
+        &__text
+            margin: 0 auto
+            max-width: 52.92rem
+            font-size: 1.428rem
+            margin-bottom: 2.85rem
+            margin-top: 1.71rem
+@media screen and ( min-width: 1240px )
+    .section-title
+        &__text
+            margin: 0 auto
+            max-width: 52.92rem
+            font-size: 1.428rem
+            margin-bottom: 2.85rem
+            margin-top: 1.71rem
 @media screen and ( max-width: 1240px )
     html
         font-size: 12px
@@ -9,12 +30,13 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
-@media screen and ( min-width: 1600px )
-    .contacts
-        &__button
-            display: flex
-        &__phone
-            margin-right: 3.75rem
+    .section-title
+        &__text
+            margin: 0 auto
+            max-width: 52.92rem
+            font-size: 1.428rem
+            margin-bottom: 2.85rem
+            margin-top: 1.71rem
 @media screen and ( max-width: 992px )
     .nav
         display: none
@@ -23,10 +45,24 @@
             display: none
         &__content
             margin-left: 0
+    .section-title
+        &__text
+            margin: 0 auto
+            max-width: 52.92rem
+            font-size: 1.428rem
+            margin-bottom: 2.85rem
+            margin-top: 1.71rem
 @media screen and ( max-width: 885px )
     .card
         &__title
             font-size: 1rem
+@media screen and ( max-width: 845px )
+    .section-title
+        &__text
+            font-size: 1.2rem
+            min-width: 21.78rem
+        &__heading
+            font-size: 1.83rem 
 @media screen and ( max-width: 750px )
     .row
         flex-direction: column
@@ -45,8 +81,29 @@
             color: $light
         &__color
         background: linear-gradient(to top, $dark 100%, transparent 0%)
+    .section-title
+        &__text
+            padding: 0
+            width: 25.5rem
+            max-height: 76px
+            line-height: 1.7rem
+            font-size: 1.1rem
+            padding-right: 35px
+            margin-bottom: 3.25rem
+        &__word
+            &::after
+                display: none
+    .section-image
+        &__image
+            margin-top: 2.987rem
+    .swiper-slide
+        &__heading
+            font-size: 1.166rem
     
 @media screen and ( max-width: 570px )
+    .swiper-slide
+        &__heading
+            font-size: 1rem
     .contacts
         &__phone
             margin-right: 0
@@ -79,11 +136,42 @@
         &__button
             padding: 20px 70px
             margin-left: 18px
+    .section-image
+        &__image
+            width: 100%
 @media screen and ( max-width: 320px )
+    .row
+        align-items: flex-start
+    .header
+        width: 26.7rem
+    .hero
+        &::after
+            display: none
     .hero
         &__button
             margin: 0 auto
             margin-bottom: 1.83rem
+    .section-title
+        &__text
+            padding: 0
+            width: 20rem
+            max-height: 76px
+            line-height: 1.7rem
+            font-size: 1.1rem
+            
+            margin-bottom: 3.25rem
+        &__heading
+            margin-top: -36px
+    .section-image
+        &__image
+            width: 100% 
+    .swiper-slide
+        &__text
+            width: 50%
+        &__value
+            line-height: 1.428rem
+    .swiper-container
+        width: 22.85rem
     
     
     
