@@ -30,6 +30,14 @@
             align-items: center
 
 @media screen and ( max-width: 992px )
+    .row
+        flex-direction: column
+        .col-50
+            width: 100%
+            &--two
+                margin-top: 3rem
+    .swiper-slider-image
+        width: 100%
     .nav
         display: none
     .hero
@@ -58,7 +66,6 @@
 @media screen and ( max-width: 750px )
     .row
         flex-direction: column
-        align-items: center
     .types__card
         margin-bottom: 5rem
     .design__card
@@ -98,6 +105,8 @@
         flex-direction: column
         .col-50
             width: 100%
+    .swiper-slider-image
+        width: 100%
     .contacts
         &__phone
             margin-right: 0
@@ -122,7 +131,6 @@
     .section-title
         &__text
             padding: 0
-            margin: 0
             width: 20rem
             max-height: 76px
             line-height: 1.7rem
@@ -134,9 +142,6 @@
         &__text
             color: $light
             font-size: 1rem
-    .section-image
-        &__image            
-            width: 100%
     .swiper-slide
         &__heading
             font-size: 1rem
@@ -156,9 +161,11 @@
             margin-left: 18px
 @media screen and ( max-width: 320px )
     .row
-        align-items: flex-start
+        flex-direction: column
         .col-50
             width: 100%
+    .swiper-slider-image
+        width: 100%
     .header
         width: 26.7rem
     .hero
@@ -171,7 +178,6 @@
     .section-title
         &__text
             padding: 0
-            margin: 0
             width: 20rem
             max-height: 76px
             line-height: 1.7rem
@@ -179,9 +185,6 @@
             margin-bottom: 3.25rem
         &__heading
             margin-top: -36px
-    .section-image
-        &__image
-            width: 100% 
     .swiper-slide
         &__text
             width: 50%
