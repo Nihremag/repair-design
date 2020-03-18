@@ -862,7 +862,9 @@ img {
 
 @media screen and (max-width: 570px) {
   .row {
-    align-items: flex-start; }
+    flex-direction: column; }
+    .row .col-50 {
+      width: 100%; }
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
