@@ -93,9 +93,8 @@
             font-size: 1.166rem
     
 @media screen and ( max-width: 570px )
-    .swiper-slide
-        &__heading
-            font-size: 1rem
+    .row
+        align-items: flex-start
     .contacts
         &__phone
             margin-right: 0
@@ -117,10 +116,30 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+    .section-title
+        &__heading
+            margin-left: 2.6rem
+        &__text
+            margin-left: 2.6rem
     .section-subtitle
         &__text
             color: $light
             font-size: 1rem
+    .col-50
+        width: 100%
+    .section-image
+        &__image            
+            max-width: 100%
+    .swiper-slide
+        &__heading
+            font-size: 1rem
+        &__text
+            font-size: 1rem
+            width: 50%
+        &__value
+            line-height: 1.428rem
+    .swiper-container
+        width: 22.85rem
 @media screen and ( max-height: 520px )
     .hero
         &__scroll-down
@@ -128,16 +147,6 @@
         &__button
             padding: 20px 70px
             margin-left: 18px
-    .section-image
-        &__image
-            width: 100%
-    .swiper-slide
-        &__text
-            width: 50%
-        &__value
-            line-height: 1.428rem
-    .swiper-container
-        width: 22.85rem
 @media screen and ( max-width: 320px )
     .row
         align-items: flex-start
