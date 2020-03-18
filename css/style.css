@@ -777,26 +777,6 @@ img {
   .modal__button {
     align-self: flex-end; }
 
-@media screen and (min-width: 1600px) {
-  .contacts__button {
-    display: flex; }
-  .contacts__phone {
-    margin-right: 3.75rem; }
-  .section-title__text {
-    margin: 0 auto;
-    max-width: 52.92rem;
-    font-size: 1.428rem;
-    margin-bottom: 2.85rem;
-    margin-top: 1.71rem; } }
-
-@media screen and (min-width: 1240px) {
-  .section-title__text {
-    margin: 0 auto;
-    max-width: 52.92rem;
-    font-size: 1.428rem;
-    margin-bottom: 2.85rem;
-    margin-top: 1.71rem; } }
-
 @media screen and (max-width: 1240px) {
   html {
     font-size: 12px; }
@@ -811,7 +791,17 @@ img {
     max-width: 52.92rem;
     font-size: 1.428rem;
     margin-bottom: 2.85rem;
-    margin-top: 1.71rem; } }
+    margin-top: 1.71rem; }
+  .menu__contacts {
+    display: flex; }
+  .menu__button {
+    display: block; }
+  .menu__nav {
+    font-size: 1.16rem; }
+  .contacts__phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -902,7 +892,13 @@ img {
     padding: 20px 70px;
     margin-left: 18px; }
   .section-image__image {
-    width: 100%; } }
+    width: 100%; }
+  .swiper-slide__text {
+    width: 50%; }
+  .swiper-slide__value {
+    line-height: 1.428rem; }
+  .swiper-container {
+    width: 22.85rem; } }
 
 @media screen and (max-width: 320px) {
   .row {
