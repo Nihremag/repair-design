@@ -9,13 +9,6 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
-    .section-title
-        &__text
-            margin: 0 auto
-            max-width: 52.92rem
-            font-size: 1.428rem
-            margin-bottom: 2.85rem
-            margin-top: 1.71rem
     .menu
         &__contacts
             display: flex
@@ -31,11 +24,12 @@
 
 @media screen and ( max-width: 992px )
     .row
-        flex-direction: column
-        .col-50
-            width: 100%
-            &--two
-                margin-top: 3rem
+        &__two
+            flex-direction: column
+            .col-50
+                width: 100%
+                &--two
+                    margin-top: 3rem
     .swiper-slider-image
         width: 100%
     .nav
@@ -45,27 +39,18 @@
             display: none
         &__content
             margin-left: 0
-    .section-title
-        &__text
-            margin: 0 auto
-            max-width: 52.92rem
-            font-size: 1.428rem
-            margin-bottom: 2.85rem
-            margin-top: 1.71rem
 @media screen and ( max-width: 885px )
     .card
         &__title
             font-size: 1rem
 @media screen and ( max-width: 845px )
     .section-title
-        &__text
-            font-size: 1.2rem
-            min-width: 21.78rem
         &__heading
             font-size: 1.83rem 
 @media screen and ( max-width: 750px )
     .row
-        flex-direction: column
+        flex-direction: column  
+        align-items: center
     .types__card
         margin-bottom: 5rem
     .design__card
@@ -75,23 +60,39 @@
             margin-left: 0
         &__title
             font-size: 1.29rem
-    .design
-        &__section-title
+    .design, .control
+        &__section-title, &__text
             color: $light
         &__color
         background: linear-gradient(to top, $dark 100%, transparent 0%)
-    .section-title
+    .input-group
+        &__one
+            flex-basis: 100%
+            margin-bottom: 4.64rem
+    .input-group
+        &__two
+            flex-basis: 100%
+            margin-bottom: 1rem
+    .control
         &__text
-            padding: 0
-            width: 25.5rem
-            max-height: 76px
-            line-height: 1.7rem
-            font-size: 1.1rem
-            padding-right: 35px
-            margin-bottom: 3.25rem
+            font-size: 1.06rem
+        &__policy-label
+            margin-bottom: 4.5rem
+            justify-content: start
+        &__label
+            color: $secondary
+        &__policy
+            color: $light
+        &__button
+            position: absolute
+            left: 50%
+            margin-left: -150px
+            padding: 20px 124px
+            margin-top: 23rem
+    .section-title
         &__word
             &::after
-                display: none
+                display: none        
     .section-image
         &__image
             margin-top: 2.987rem
@@ -101,12 +102,8 @@
             font-size: 1.166rem
     
 @media screen and ( max-width: 570px )
-    .row
-        flex-direction: column
-        .col-50
-            width: 100%
-    .swiper-slider-image
-        width: 100%
+    .col-50
+        justify-content: flex-start
     .contacts
         &__phone
             margin-right: 0
@@ -130,19 +127,13 @@
             margin-bottom: 1.85rem
     .section-title
         &__text
-            padding: 0
             width: 20rem
             max-height: 76px
             line-height: 1.7rem
             font-size: 1.06rem
             margin-bottom: 3.25rem
-        &__heading
-            margin-top: -36px
-    .section-subtitle
-        &__text
-            color: $light
-            font-size: 1rem
-    .swiper-slide
+    .swiper-slide        
+        margin-left: 0
         &__heading
             font-size: 1rem
         &__text
@@ -151,7 +142,8 @@
         &__value
             line-height: 1.428rem
     .swiper-container
-        width: 22.85rem
+        margin-left: 0
+        width: 22.8rem
 @media screen and ( max-height: 520px )
     .hero
         &__scroll-down
@@ -160,11 +152,7 @@
             padding: 20px 70px
             margin-left: 18px
 @media screen and ( max-width: 320px )
-    .row
-        flex-direction: column
-        .col-50
-            width: 100%
-    .swiper-slider-image
+    .col-50
         width: 100%
     .header
         width: 26.7rem
