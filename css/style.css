@@ -849,6 +849,18 @@ img {
   .footer__map {
     margin-bottom: 4rem;
     min-height: 465px; }
+  .footer__text {
+    color: #E3B873;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.428rem;
+    text-align: center;
+    margin: auto;
+    width: 35rem;
+    text-transform: uppercase;
+    line-height: 2rem; }
+  .footer__icons {
+    margin-left: 1rem;
+    margin-bottom: 2rem; }
 
 .modal {
   opacity: 0;
@@ -1041,6 +1053,14 @@ img {
     text-align: center; }
   .footer__color {
     background: #131313; }
+  .footer__position {
+    display: flex;
+    flex-direction: column; }
+  .footer__text {
+    width: 25rem;
+    order: 2; }
+  .footer__map {
+    order: 1; }
   .policy__label {
     justify-content: flex-start;
     margin-top: -2rem;
