@@ -643,6 +643,9 @@ img {
   width: auto;
   bottom: -2px; }
 
+.control__input {
+  color: #131313; }
+
 .control__section-title {
   margin-bottom: 2.214rem;
   margin-top: -30rem; }
@@ -1066,6 +1069,8 @@ img {
   .footer__wrap {
     background-color: #131313;
     margin-top: -35rem; }
+  .control__input {
+    color: #ffffff; }
   .policy__label {
     justify-content: flex-start;
     margin-top: -2rem;
