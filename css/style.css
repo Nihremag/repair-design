@@ -643,6 +643,9 @@ img {
   width: auto;
   bottom: -2px; }
 
+.control__input {
+  color: #959595; }
+
 .control__section-title {
   margin-bottom: 2.214rem;
   margin-top: -30rem; }
@@ -1045,6 +1048,8 @@ img {
   .swiper-container {
     margin-left: 0;
     width: 22.8rem; }
+  .design {
+    padding-bottom: 15rem; }
   .footer__input-group {
     flex-basis: 100%; }
   .footer__button {
@@ -1061,6 +1066,8 @@ img {
     order: 2; }
   .footer__map {
     order: 1; }
+  .footer__wrap {
+    background-color: #131313; }
   .policy__label {
     justify-content: flex-start;
     margin-top: -2rem;
