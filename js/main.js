@@ -127,6 +127,23 @@ $(document).ready(function () {
     // маска для телефона
     $('[type=tel]').mask('+7(000) 000-00-00' , {placeholder: "+7 (___) __-__-___"});
 
+    // ютуб плеер
+    var player;
+    $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '465',
+          width: '100%',
+          videoId: 'RHzzLqJWqHs',
+          events: {
+            'onReady': videoPlay,
+          }
+        });
+      })
+
+      function videoPlay(event) {
+          event.target.playVideo();
+      }
+
     // создание yandex карты
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
@@ -163,3 +180,12 @@ $(document).ready(function () {
             .disable('scrollZoom');
     });
 });
+
+function ScrollDown(){
+    let t, s;
+    s = document.body.scrollDown||window.pageYOffset;
+    t = setInterval(function()
+    {
+      if(s > 0)window.scroll(0, s+=5);
+      else clearInterval(t)}, 0.1);
+    }
