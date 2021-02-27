@@ -181,11 +181,15 @@ $(document).ready(function () {
     });
 });
 
-function ScrollDown(){
-    let t, s;
-    s = document.body.scrollDown||window.pageYOffset;
-    t = setInterval(function()
-    {
-      if(s > 0)window.scroll(0, s+=5);
-      else clearInterval(t)}, 0.1);
-    }
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+    anchor.addEventListener("click", function(event) {
+        event.preventDefault();
+        const blockID = anchor.getAttribute('href')
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
+}
