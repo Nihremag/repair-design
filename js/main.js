@@ -181,6 +181,7 @@ $(document).ready(function () {
     });
 });
 
+// плаваная прокрутка вниз
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
